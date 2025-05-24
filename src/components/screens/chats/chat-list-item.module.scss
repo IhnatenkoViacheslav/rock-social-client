@@ -1,0 +1,47 @@
+.listItem {
+  display: flex;
+  padding: 12px 4px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-radius: 10px;
+    background-color: var(--dark-bg);
+  }
+
+  .left {
+    display: flex;
+    gap: 16px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 4px;
+    }
+
+    h4 {
+      color: white;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    span {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+
+    span {
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+}
